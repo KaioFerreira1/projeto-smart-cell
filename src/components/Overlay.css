@@ -1,0 +1,104 @@
+/* Overlay Container */
+.overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Overlay Box */
+  .overlay-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 303px;
+    text-align: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
+  
+  /* Header da Overlay */
+  .overlay-header {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Ícone de Sucesso ou Erro */
+  .overlay-icon {
+    width: 100px;  /* Ajuste o tamanho da imagem */
+    height: 100px;
+    margin: 0 auto;  /* Para centralizar a imagem */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Corpo da Mensagem */
+  .overlay-body h3 {
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .overlay-footer {
+    margin-top: 20px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .btn-primary {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+  }
+  
+  .btn-secondary {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+  }
+  
+  /* Estilo para a Mensagem de Sucesso */
+  .success .overlay-header {
+    color: #4caf50;  /* Cor verde para sucesso */
+  }
+  
+  /* Estilo para a Mensagem de Erro */
+  .error .overlay-header {
+    color: #f44336;  /* Cor vermelha para erro */
+  }
+  
+  /* Diferenciar os Overlays por ID para Evitar Conflitos */
+  .overlay-login,
+  .overlay-signup {
+    z-index: 1000;
+    /* Ajuste o z-index se necessário */
+  }
+  
+  /* Customização do Layout de Sucesso */
+  .overlay-success {
+    background-color: #e8f5e9;  /* Cor de fundo para sucesso */
+    border-color: #4caf50;  /* Borda verde para sucesso */
+  }
+  
+  /* Customização do Layout de Erro */
+  .overlay-error {
+    background-color: #ffebee;  /* Cor de fundo para erro */
+    border-color: #f44336;  /* Borda vermelha para erro */
+  }
+  

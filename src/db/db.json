@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "6ad2",
+      "name": "Kaio Ferreira De Souza",
+      "email": "kaiof29022@gmail.com",
+      "password": "Kaio0077"
+    },
+    {
+      "id": "6455",
+      "name": "kaio2",
+      "email": "kaiof2902@gmail.com",
+      "password": "Kaio0077"
+    },
+    {
+      "id": "6152",
+      "name": "Kaio",
+      "email": "kaio@gmail.com",
+      "password": "kaio0077"
+    },
+    {
+      "id": "7387",
+      "name": "Kaio Ferreira de Souza",
+      "email": "ka@g.com",
+      "password": "ka9299292"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S23",
+      "brand": "Samsung",
+      "price": 4999.99,
+      "stock": 10,
+      "imageUrl": "/images/galaxys21.jpg"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 15",
+      "brand": "Apple",
+      "price": 7499.99,
+      "stock": 5,
+      "imageUrl": "/images/iphone13.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Xiaomi 13",
+      "brand": "Xiaomi",
+      "price": 3500,
+      "stock": 7,
+      "imageUrl": "/images/mi11.jpg"
+    }
+  ]
+}

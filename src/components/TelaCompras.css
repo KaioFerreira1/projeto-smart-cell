@@ -1,0 +1,255 @@
+/* Container principal da página */
+.custom-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0;
+    /* Ajuste para eliminar qualquer espaço antes do botão */
+    padding: 0;
+}
+
+
+/* Lista de dispositivos - Flexbox para coluna */
+.custom-devices-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    /* Largura máxima para a lista */
+    padding: 0 10px;
+}
+
+/* Cartão de cada dispositivo */
+.custom-device-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.3s;
+    border: 1px solid black;
+    position: relative;
+}
+
+.custom-device-card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-device-image {
+    width: 170px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.custom-device-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    font-size: 0.7rem;
+    margin-right: 430px;
+    margin-top: 5px;
+    color: black;
+}
+
+.custom-device-name {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+.custom-device-description {
+    font-size: 0.7rem;
+    color: black;
+    margin: 0;
+}
+
+.custom-device-price {
+    font-size: 0.7rem;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+
+.custom-device-actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.custom-quantity-controls {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 65px;
+    /* Ajuste a posição vertical */
+    right: 115px;
+    /* Ajuste a posição horizontal */
+}
+
+.custom-quantity {
+    font-size: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 5px;
+}
+
+.custom-quantity-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.custom-quantity-icon-plus {
+    width: 25px;
+    height: 25px;
+}
+
+.custom-quantity-icon-minus {
+    width: 25px;
+    height: 25px;
+}
+
+/* Botão de adicionar ao carrinho */
+.custom-home-container .custom-btn-primary-home {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 14px;
+    font-size: 12px;
+    margin-top: 85px;
+    margin-right: 30px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-btn-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.custom-home-container .custom-btn-secondary-home {
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.custom-home-container .custom-btn-secondary-home:hover {
+    background-color: #e0e0e0;
+}
+
+.custom-sort-button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    /* Para posicionar os elementos filhos de forma absoluta */
+    margin-top: 100px;
+}
+
+.custom-sort-button {
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    position: absolute;
+    /* Agora o botão será posicionado de forma absoluta */
+    top: -15px;
+    /* Ajuste para mover para baixo */
+    left: 90px;
+    /* Ajuste para mover para a esquerda */
+}
+
+
+
+.custom-sort-button:hover {
+    opacity: 0.8;
+}
+
+
+
+.custom-pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 990px;  /* Distância do topo da página */
+    right: 120px; /* Distância da esquerda da página */
+}
+
+
+.custom-pagination img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    width: 40px;
+}
+
+/* Estilos para a imagem de navegação ativa/desativada */
+.custom-pagination-enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.custom-pagination-disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+/* Estilos para os números das páginas */
+.custom-pagination-page {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-pagination-page:hover {
+    background-color: #f0f0f0;
+}
+
+.custom-pagination-page.active {
+    font-weight: bold;
+}
+
+.custom-pagination-page {
+    border-radius: 5px;
+}
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .devices-list {
+        flex-direction: column;
+        /* Garante que os itens ainda ficam em coluna em telas pequenas */
+    }
+
+    /* Ajuste da imagem para telas pequenas */
+    .device-image {
+        max-width: 150px;
+    }
+}
